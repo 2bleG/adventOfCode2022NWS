@@ -1,4 +1,3 @@
-# Input data
 data = """
 13399
 13677
@@ -2254,29 +2253,20 @@ data = """
 5321
 1877
 """
-
-# Split the data into individual lines
 lines = data.strip().split("\n")
 
-# Initialize variables
 current_elf_calories = 0
 max_elf_calories = 0
 
-# Loop through each line
 for line in lines:
     if line:
-        # If the line is not empty, add the Calories to the current Elf's total
         current_elf_calories += int(line)
     else:
-        # If the line is empty, check if the current Elf's total is the highest
         if current_elf_calories > max_elf_calories:
             max_elf_calories = current_elf_calories
-        # Reset the current Elf's total for the next Elf
         current_elf_calories = 0
 
-# Check for the last Elf in case the input doesn't end with an empty line
 if current_elf_calories > max_elf_calories:
     max_elf_calories = current_elf_calories
 
-# Print the result
 print("Elf with the most Calories:", max_elf_calories)

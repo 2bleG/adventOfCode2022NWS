@@ -1,4 +1,3 @@
-# Input data
 data = """
 13399
 13677
@@ -2255,33 +2254,22 @@ data = """
 1877
 """
 
-# Split the data into individual lines
 lines = data.strip().split("\n")
 
-# Initialize variables
 elf_calories = []
 current_elf_calories = 0
 
-# Loop through each line
 for line in lines:
     if line:
-        # If the line is not empty, add the Calories to the current Elf's total
         current_elf_calories += int(line)
     else:
-        # If the line is empty, add the current Elf's total to the list
         elf_calories.append(current_elf_calories)
-        # Reset the current Elf's total for the next Elf
         current_elf_calories = 0
 
-# Check for the last Elf in case the input doesn't end with an empty line
 elf_calories.append(current_elf_calories)
 
-# Sort the list of Elf Calories in descending order
 sorted_elf_calories = sorted(elf_calories, reverse=True)
 
-# Calculate the total Calories carried by the top three Elves
 total_top_three_calories = sum(sorted_elf_calories[:3])
 
-# Print the result
 print("Total Calories carried by the top three Elves:", total_top_three_calories)
-
