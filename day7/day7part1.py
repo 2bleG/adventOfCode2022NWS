@@ -57,4 +57,4 @@ for abspath in dir_sizes:
     if dfs(abspath) <= 100000:
         ans += dfs(abspath)
 
-print(ans)
+print("la réponse est :", ans)

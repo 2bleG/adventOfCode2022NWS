@@ -63,4 +63,4 @@ for abspath in dir_sizes:
     if size >= required:
         ans = min(ans, size)
 
-print(ans)
+print("la réponse est :", ans)
