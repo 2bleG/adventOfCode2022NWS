@@ -31,4 +31,4 @@ for line in lines:
             ans += op * (X - V)
 
 
-print(ans)
+print("la réponse est :", ans)

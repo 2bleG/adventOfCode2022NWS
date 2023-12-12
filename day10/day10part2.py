@@ -39,4 +39,4 @@ for row in range(6):
 
 
 for row in ans:
-    print("".join(row))
+    print("la réponse est :", "".join(row))
