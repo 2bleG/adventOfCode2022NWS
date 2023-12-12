@@ -3,9 +3,9 @@ with open("./day_06.in") as fin:
 
 i = 0
 while True:
-    s = data[i:(i+14)]
-    if len(set(list(s))) == 14:
-        print("la réponse est :", (i + 14))
+    s = data[i:(i+4)]
+    if len(set(list(s))) == 4:
+        print("la réponse est :", (i + 4))
         break
 
     i += 1
