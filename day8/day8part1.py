@@ -24,4 +24,4 @@ for i in range(n):
         elif i == n - 1 or np.amax(grid[(i+1):, j]) < h:
             ans += 1
 
-print(ans)
+print("la réponse est :", ans)

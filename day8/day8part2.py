@@ -35,4 +35,4 @@ for i in range(n):
         ans = max(ans, score)
 
 
-print(ans)
+print("la réponse est :", ans)
